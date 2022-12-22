@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { ExampleComponent } from 'react-modal-component-library'
+import Modal from 'react-modal-component-library'
 import 'react-modal-component-library/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [modalVisible, setModalVisible] = useState(true)
+
+  const closeModal = () => {
+    setModalVisible(false)
+  }
+
+  return (
+    <div>
+      {modalVisible && (
+        <Modal text='Employee Created !' closeModal={closeModal} />
+      )}
+    </div>
+  )
 }
 
 export default App
