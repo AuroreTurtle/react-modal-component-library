@@ -1,6 +1,6 @@
 {
   "name": "react-modal-component-library",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Library of a React Modal Component for HealthWealth (OC project 14)",
   "author": "AuroreTurtle",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -48,7 +48,7 @@
     "gh-pages": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^16.13.1",
+    "react": "^18.2.0",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
   },
