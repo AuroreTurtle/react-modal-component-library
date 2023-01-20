@@ -1,16 +1,22 @@
-import React from 'react'
+import React from "react";
 
-function Modal({ closeModal, text }) {
+function Modal({ closeModal, text, styleModalBody, styleButton, styleText }) {
   return (
-    <div className='modal'>
-      <div className='modal-body'>
-        <button className='modal-button' onClick={closeModal}>
+    <div className="modal">
+      <div style={styleModalBody} className="modal-body">
+        <button
+          style={styleButton}
+          className="modal-button"
+          onClick={closeModal}
+        >
           X
         </button>
-        <p className='modal-text'> {text} </p>
+        <p style={styleText} className="modal-text">
+          {text}
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Modal
+export default Modal;
